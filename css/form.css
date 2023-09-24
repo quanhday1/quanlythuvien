@@ -1,0 +1,75 @@
+
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label, input {
+    padding-right: 50%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+
+/* / ................................................ */
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+  .bookif{
+    padding-right: 15px;
+  }
+  .usersif{
+    padding-right: 15px;
+  }
+
+
+  .button-group {
+    display: inline-block;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin: 10px;
+    font-size: 10px;
+  }
+
+
+  .lb_book{
+    padding-left: 70px;
+
+  }
