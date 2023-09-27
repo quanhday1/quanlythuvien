@@ -8,7 +8,21 @@ include('ui/header.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1>Lịch sử</h1>
+                    
+                    <table>
+                        <tr>
+                            <th class="bookif">Sách Mượn</th>
+                            <th class="bookif">Người Mượn</th>
+                            <th class="bookif">Ngày Mượn</th>
+                            <th class="bookif">Hạn Trả</th>
+                            <th class="bookif">Ngày Trả</th>
+                            <th class="bookif">Tình Trạng </th>
+                        </tr>
+                    <?php
+                    include('/xampp/htdocs/quanlythuvien/module/historyreader.php');
+                    ?>
+                    </table>
 
                 </div>
                 <!-- /.container-fluid -->

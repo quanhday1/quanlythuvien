@@ -18,19 +18,19 @@
 
         echo '<div class="button-group">';
 
-        echo '<form style="display: inline-block;" method="post" action="./module/.php">';
+        echo '<form style="display: inline-block;" method="post" action="./historyreader.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Lịch sử</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Lịch sử</button>';
         echo '</form>';
 
         echo '<form style="display: inline-block;" method="post" action="./editmember.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Sửa</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Sửa</button>';
         echo '</form>';
 
         echo '<form style="display: inline-block;" method="post" action="./module/delemember.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Xóa</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Xóa</button>';
         echo '</form>';
         
         echo '</div>';

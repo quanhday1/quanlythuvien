@@ -21,6 +21,74 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/form.css">
 
+    <style>
+/* start dang ki muon sach */
+    input[type="date"] {
+        /* Loại bỏ giao diện mặc định của trình duyệt */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* Tùy chỉnh kích thước */
+        width: 200px;
+        height: 32px;
+        padding: 6px 12px;
+    
+        /* Tùy chỉnh font chữ */
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    
+        /* Tùy chỉnh viền */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    
+        /* Tùy chỉnh màu nền và màu chữ */
+        background-color: #fff;
+        color: #333;
+    
+        /* Tùy chỉnh hiển thị mũi tên chỉ xuống */
+        background-image: linear-gradient(to bottom, #ffffff 50%, #e5e5e5 100%);
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+    
+    /* Tùy chỉnh màu nền khi hover */
+    input[type="date"]:hover {
+        background-color: #f9f9f9;
+    }
+    
+    /* Tùy chỉnh màu nền khi focus */
+    input[type="date"]:focus {
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        outline: none;
+    }
+    input[type="submit"] {
+        padding: 0 20px;
+    }
+
+    .editbook{
+        margin-left: 10%;
+    }
+    .containerdate{
+        display: flex;
+    }
+
+    .containerdate > div{
+        margin-right: 10px;
+    }
+
+    .buttonclick{
+        
+        border: solid 0.5px #333;
+        border-radius: 2px;
+        margin-right: 2px;
+        margin-top: 1px;
+    }
+/* end css dang ki  */
+
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -44,7 +112,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Trang chủ</span></a>
             </li>
@@ -125,13 +193,14 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"  
+                    method="post" action="search.php"
+                    >
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                                aria-label="Search" aria-describedby="basic-addon2" name="keyword">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-primary" type="submit">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>

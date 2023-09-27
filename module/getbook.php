@@ -26,17 +26,17 @@
 
         echo '<form style="display: inline-block;" method="post" action="./borrowbook.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Borrow</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Borrow</button>';
         echo '</form>';
 
         echo '<form style="display: inline-block;" method="post" action="./editbook.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Edit</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Edit</button>';
         echo '</form>';
 
         echo '<form style="display: inline-block;" method="post" action="./module/delebook.php">';
         echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-        echo '<button class="delete-button" type="submit" name="action">Delete</button>';
+        echo '<button class="buttonclick" type="submit" name="action">Delete</button>';
         echo '</form>';
         
         echo '</div>';

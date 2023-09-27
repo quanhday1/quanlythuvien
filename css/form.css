@@ -73,3 +73,45 @@
     padding-left: 70px;
 
   }
+
+  input[type="date"] {
+    /* Loại bỏ giao diện mặc định của trình duyệt */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    /* Tùy chỉnh kích thước */
+    width: 200px;
+    height: 32px;
+    padding: 6px 12px;
+  
+    /* Tùy chỉnh font chữ */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  
+    /* Tùy chỉnh viền */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+    /* Tùy chỉnh màu nền và màu chữ */
+    background-color: #fff;
+    color: #333;
+  
+    /* Tùy chỉnh hiển thị mũi tên chỉ xuống */
+    background-image: linear-gradient(to bottom, #ffffff 50%, #e5e5e5 100%);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+  }
+  
+  /* Tùy chỉnh màu nền khi hover */
+  input[type="date"]:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Tùy chỉnh màu nền khi focus */
+  input[type="date"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
