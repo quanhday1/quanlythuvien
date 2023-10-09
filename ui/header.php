@@ -87,6 +87,82 @@
     }
 /* end css dang ki  */
 
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.themebook{
+    display: block;
+}
+
+.search-form {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-form input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
     </style>
 
 </head>
